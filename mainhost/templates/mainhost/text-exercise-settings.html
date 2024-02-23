@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Обучающая платформа</title>
+    <link rel="stylesheet" href="{% static 'mainhost/css/sidebar/exercises_window.css' %}">
+    <link rel="stylesheet" href="{% static 'mainhost/css/body/games_previews.css' %}">
+    <link rel="stylesheet" href="{% static 'mainhost/css/body/text_exercise_settings.css' %}">
+    <link rel="stylesheet" href="{% static 'mainhost/css/body/back_button.css' %}">
+</head>
+<body class="">
+    <div class="sidebar">
+        <div class="profile-block-info">Разделы</div>
+        <a href="{% url 'mainhost_window' %}" class="sidebar-link">Тренажёры</a>
+        <a class="sidebar-link">Мои классы</a>
+        <a class="sidebar-link">Мои ученики</a>
+    </div>
+    <div class="back"><a href="{% url 'mainhost_window' %}" class="back">
+        <img class="back-icon" src="{% static 'mainhost/img/back-3.png' %}"></a>
+    </div>
+
+    <div class="settings-panel">
+        <div class="text-exercise-settings">
+            <form action="{% url 'text-settings' %}" method="POST" class="text-settings-form">
+                {% csrf_token %}
+                <p class="settings-label">Текст:</p>
+                {{ form.text }}
+                <p class="settings-label">Режим:</p>
+                {{ form.mode }}
+                <a href="{% url 'create_text' %}" class="add-text">Добавить текст</a>
+                <button type="submit" class="text-start">Старт</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background: midnightblue;
+}
+.profile-block-info,
+.sidebar-link {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.4s;
+    background-color: midnightblue;
+    text-decoration: none;
+}
+.profile-block-info {
+    font-family: arial, serif;
+    font-size: 20px;
+    font-weight: 1000;
+    color: white;
+    height: 60px;
+    margin-top: 0;
+    padding: 20px 0 20px 0;
+}
+.sidebar-link {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: arial, serif;
+    height: 50px;
+    margin: 5px 10px;
+    border-radius: 4px;
+}
+.sidebar-link:hover {
+    background-color: white;
+    color: midnightblue;
+}

@@ -1,0 +1,16 @@
+.back {
+  display: inline-block;
+  margin-top: 5px;
+}
+.back-icon {
+  background-color: darkblue;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.4s;
+}
+.back-icon:hover {
+  background-color: rgb(17,17,90);
+}
+.back-icon:active {
+  background-color: rgb(20,20,100);
+}

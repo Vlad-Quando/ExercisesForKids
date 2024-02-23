@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Обучающая платформа</title>
+    <link rel="stylesheet" href="{% static 'mainhost/css/sidebar/exercises_window.css' %}">
+    <link rel="stylesheet" href="{% static 'mainhost/css/body/games_previews.css' %}">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile-block-info">Разделы</div>
+        <a href="{% url 'mainhost_window' %}" class="sidebar-link">Тренажёры</a>
+        <a class="sidebar-link">Мои классы</a>
+        <a class="sidebar-link">Мои ученики</a>
+    </div>
+    <div class="games">
+        <a class="game-name" href="">Таблица Шульте</a>
+        <a class="game-name" href="">Memo</a>
+        <a class="game-name" href="">Таблица Горбова</a>
+        <a class="game-name" href="">Мнемотехника</a>
+        <a class="game-name" href="">Летний пикник</a>
+        <a class="game-name" href="{% url 'text-settings' %}">Тексты</a>
+    </div>
+</body>
+</html>

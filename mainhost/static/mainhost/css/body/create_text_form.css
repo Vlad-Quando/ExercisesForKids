@@ -1,0 +1,49 @@
+.create-text-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control {
+  width: 700px;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: darkblue;
+  margin: 0 200px 10px 20px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.create-text-form input {
+  height: 24px;
+}
+
+.create-text-form textarea {
+  height: 400px;
+}
+
+.create-text {
+  margin: 10px 20px 10px 22px;
+  padding: 10px;
+  background-color: darkblue;
+
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+
+  border: none;
+  border-radius: 18px;
+  box-shadow: 1px 1px 2px black;
+
+  transition: background-color 0.5s, color 0.5s, padding-bottom 0.3s, padding-right 0.3s;
+}
+
+.create-text:hover {
+  background-color: white;
+  color: darkblue;
+  box-shadow: none;
+  padding-bottom: 11px;
+  padding-right: 11px;
+}

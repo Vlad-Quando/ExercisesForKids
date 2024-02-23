@@ -1,0 +1,51 @@
+body {
+  position: fixed;
+  background-color: darkslateblue;
+  padding-left: 210px;
+  padding-top: 10px;
+}
+
+.games {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+@media (min-width: 951px) {
+  .games {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 751px) and (max-width: 950px){
+  .games {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 750px) and (min-width: 551px) {
+  .games {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 550px) {
+  .games {
+    grid-template-columns: 1fr;
+  }
+}
+
+.game-name:hover {
+  background-color: rgb(17,17,90);
+}
+.game-name:active {
+  background-color: rgb(20,20,100);
+}
+
+.game-name {
+  font-family: Arial;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: midnightblue;
+  padding: 40px 20px 40px 20px;
+  border-radius: 5px;
+  transition: background-color 0.6s;
+}

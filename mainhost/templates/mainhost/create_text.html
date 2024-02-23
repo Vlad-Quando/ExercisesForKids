@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Обучающая платформа</title>
+    <link rel="stylesheet" href="{% static 'mainhost/css/sidebar/exercises_window.css' %}">
+    <link rel="stylesheet" href="{% static 'mainhost/css/body/games_previews.css' %}">
+    <link rel="stylesheet" href="{% static 'mainhost/css/body/create_text_form.css' %}">
+    <link rel="stylesheet" href="{% static 'mainhost/css/body/back_button.css' %}">
+</head>
+<body class="create-text-body">
+    <div class="sidebar">
+        <div class="profile-block-info">Разделы</div>
+        <a href="{% url 'mainhost_window' %}" class="sidebar-link">Тренажёры</a>
+        <a class="sidebar-link">Мои классы</a>
+        <a class="sidebar-link">Мои ученики</a>
+    </div>
+    <div class="back"><a href="{% url 'text-settings' %}" class="back">
+        <img class="back-icon" src="{% static 'mainhost/img/back-3.png' %}"></a>
+    </div>
+    <div class="create-text-form">
+        <form method="post">
+            {% csrf_token %}<br>
+            {{ form.title }}<br>
+            {{ form.text }}<br>
+
+            <button class="create-text" type="submit">Добавить</button>
+        </form>
+    </div>
+</body>
+</html>

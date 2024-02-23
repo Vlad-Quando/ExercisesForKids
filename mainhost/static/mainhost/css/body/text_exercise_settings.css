@@ -1,0 +1,43 @@
+.add-text {
+  background-color: navy;
+  color: white;
+  padding: 7px;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+select {
+  display: block;
+  padding: 5px 5px 5px 5px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.settings-label {
+  color: white;
+}
+
+.settings-panel {
+  display: block;
+}
+
+.text-start {
+  background-color: navy;
+  color: white;
+  padding: 8px 7px 7px 7px;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+.add-text:hover,
+.text-start:hover {
+  cursor: pointer;
+  background-color: midnightblue;
+}
